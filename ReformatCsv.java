@@ -63,7 +63,9 @@ public class ReformatCsv {
 	private void reformatLine(String[] info, int[] newFormat)
 	{
 		try {
-			PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(newFileName,true)));
+			FileWriter fw = new FileWriter(newFileName, true);
+			BufferedWriter bw = new BufferedWriter(fw);
+			PrintWriter pw = new PrintWriter(bw);
 			String newInfo = "";
 			//create new line info to be added to file, each index separated by ','
 			for(int i = 0; i < newFormat.length; i++)
@@ -71,6 +73,8 @@ public class ReformatCsv {
 			newInfo = newInfo.substring(0,newInfo.length()-1); //remove excess ','
 			pw.println(newInfo);
 			pw.close();
+			bw.close();
+			fw.close();
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
