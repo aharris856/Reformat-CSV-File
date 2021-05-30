@@ -1,5 +1,14 @@
 # Reformat-CSV-File
 Testing out something to scan a .csv File, then reformat given a reformat array with preferred index.
+FILES: testReformat.java is the main class to be called on and pass in file names, indexes, etc.
+ReformatCsv.java is the class that is called on by testReformat.java to reformat the given file.
+
+ReformatCsv Calls: .setFileName(String), .reformat(String), .getNewFileName()
+
+.setFileName(String) AND .reformat(String) Returns Boolean Type to verify success.
+Example of use of the boolean returned (assume an object "ReformatCsv ref" was created and file name was added)
+if(ref.reformat(fileName)) System.out.println("Reformat Successful");
+else System.out.println("Reformat Unsuccessful");
 
     Example:
     OLD File
