@@ -9,6 +9,7 @@ ReformatCsv Calls: .setFileName(String), .reformat(String), .getNewFileName()
 Example of use of the boolean returned (assume an object "ReformatCsv ref" was created and file name was added)
 
 if(ref.reformat(fileName)) System.out.println("Reformat Successful");
+
 else System.out.println("Reformat Unsuccessful");
 
     Example:
