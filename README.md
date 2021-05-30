@@ -2,6 +2,7 @@
 Testing out something to scan a .csv File, then reformat given a reformat array with preferred index.
 FILES: testReformat.java is the main class to be called on and pass in file names, indexes, etc.
 ReformatCsv.java is the class that is called on by testReformat.java to reformat the given file.
+csvFileTest.csv is the smaller test file I used, the larger one was too big to upload to github.
 
 ReformatCsv Calls: .setFileName(String), .reformat(String), .getNewFileName(), .getFileName()
 
