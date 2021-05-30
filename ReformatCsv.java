@@ -41,6 +41,7 @@ public class ReformatCsv {
 	//scan file
 	private boolean scanFile(int[] newFormat)
 	{
+		generateNewFileName();
 		try {
 			BufferedReader inFile = new BufferedReader(new FileReader(fileName));
 			String line = "";
@@ -61,7 +62,6 @@ public class ReformatCsv {
 	//reformat line 
 	private void reformatLine(String[] info, int[] newFormat)
 	{
-		generateNewFileName();
 		try {
 			PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(newFileName,true)));
 			String newInfo = "";
