@@ -11,7 +11,8 @@ Example of use of the boolean returned (assume an object "ReformatCsv ref" was c
     if(ref.reformat(fileName)) System.out.println("Reformat Successful");
     else System.out.println("Reformat Unsuccessful");
 
-    Example:
+ Example of Reformatting 
+ 
     OLD File
     id, name, number, email, address, number of children
     xx,   xx,     xx,    xx,      xx,                 xx
